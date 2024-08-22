@@ -2,18 +2,6 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "title": "Test one ",
-      "_id": "22d21b55-8459-4376-be2b-caa650cdb8be"
-    },
-    {
-      "title": "Test Two ",
-      "_id": "fd4205f9-0a09-4380-8399-e0fe08a78bc3"
-    },
-    {
-      "title": "Test Three",
-      "_id": "52635976-5e9d-4d46-a3a1-e409e4baadfa"
-    },
-    {
       "title": "New Station",
       "_id": "ea70fad9-bada-4488-9146-17990bd63bd1"
     }
