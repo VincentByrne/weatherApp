@@ -1,0 +1,19 @@
+{
+  "file": "./models/users.json",
+  "users": [
+    {
+      "firstName": "Vincent",
+      "lastName": "Byrne",
+      "email": "Vincentpbyrne@hotmail.com",
+      "password": "YoloSwag09",
+      "_id": "1b953914-2ced-4717-90c1-31c7a96d2bc1"
+    },
+    {
+      "firstName": "Vincent",
+      "lastName": "Byrne",
+      "email": "Vincentbyrne@hotmail.com",
+      "password": "YoloSwag09",
+      "_id": "947917a6-4ae4-4c8f-b044-9c545546b247"
+    }
+  ]
+}
