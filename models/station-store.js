@@ -25,6 +25,11 @@ export const stationStore = {
     list.reports = await reportStore.getReportsByStationId(list._id);
     return list;
   },
+  
+  async getStationsByUserId(userid) {
+    await db.read();
+    return db.data.stations.filter((station) => station.userid === userid);
+  },
 
   async deleteStationById(id) {
     await db.read();
