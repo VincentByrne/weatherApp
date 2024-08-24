@@ -3,8 +3,8 @@
     <tr>
       <th>Code</th>
       <th>Temperature</th>
-      <th>WindSpeed</th>
-      <th>windDirection</th>
+      <th>Wind Speed</th>
+      <th>Wind Direction</th>
       <th>Pressure</th>
     </tr>
   </thead>
@@ -29,6 +29,11 @@
       <td>
         <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button">
           {{>icons/delete}}
+        </a>
+      </td>
+      <td>
+        <a href="/station/{{../station._id}}/editreport/{{_id}}" class="button">
+          {{>icons/edit}}
         </a>
       </td>
     </tr>

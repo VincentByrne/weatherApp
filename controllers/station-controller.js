@@ -1,12 +1,16 @@
 import { stationStore } from "../models/station-store.js";
 import { reportStore } from "../models/report-store.js";
+import { stationAnalytics } from "../utils/station-analytics.js";
+
 
 export const stationController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
+    const shortestReport = stationAnalytics.getShortestReport(station);
     const viewData = {
       title: "Station",
       station: station,
+      shortestReport: shortestReport,
     };
     response.render("station-view", viewData);
   },
@@ -29,7 +33,7 @@ export const stationController = {
     const stationId = request.params.stationid;
     const reportId = request.params.reportid;
     console.log(`Deleting Report ${reportId} from Station ${stationId}`);
-    await reportStore.deleteReport(request.params.reportId);
+    await reportStore.deleteReport(reportId);
     response.redirect("/station/" + stationId);
   },
 };
