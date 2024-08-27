@@ -1,0 +1,83 @@
+<div class="columns is-multiline">
+  <div class="column">
+    <div class="box has-text-centered has-background-black has-text-white" style="height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="is-flex is-align-items-center is-justify-content-center">
+        <div class="title has-text-white" style="font-size: 1.5rem;"> 
+          {{station.title}}
+        </div>
+        <div class="ml-2">
+          {{>icons/location }}
+        </div>
+      </div>
+      <div class="mt-2">
+        <h4>Latitude: {{station.latitude}}°</h4>
+        <h4>Longitude: {{station.longitude}}°</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="box has-text-centered has-background-black has-text-white" style="height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="is-flex is-align-items-center is-justify-content-center">
+        <div class="title has-text-white" style="font-size: 1.3rem; white-space: nowrap;">
+          Weather
+        </div>
+        <div class="ml-2">
+          <img id="weather-icon" src="https://openweathermap.org/img/wn/{{weatherIcon}}d@4x.png" alt="Weather Icon">
+        </div>
+      </div>
+      <div class="mt-2">
+        <h4>{{weatherDescription}}</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="box has-text-centered has-background-black has-text-white" style="height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="is-flex is-align-items-center is-justify-content-center">
+        <div class="title has-text-white">
+          Temp
+        </div>
+        <div class="ml-2">
+          {{>icons/temp }}
+        </div>
+      </div>
+      <div class="mt-2">
+        <h4>Max Temp: {{maxTemp}}°C</h4>
+        <h4>Min Temp: {{minTemp}}°C</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="box has-text-centered has-background-black has-text-white" style="height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="is-flex is-align-items-center is-justify-content-center">
+        <div class="title has-text-white">
+          Wind
+        </div>
+        <div class="ml-2">
+          {{>icons/wind }}
+        </div>
+      </div>
+      <div class="mt-2">
+        <h4>{{windSpeed}} km/h</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="box has-text-centered has-background-black has-text-white" style="height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="is-flex is-align-items-center is-justify-content-center">
+        <div class="title has-text-white" style="font-size: 1.5rem;">
+          Pressure
+        </div>
+        <div class="ml-2">
+          {{>icons/pressure }}
+        </div>
+      </div>
+      <div class="mt-2">
+        <h4>{{pressure}}%</h4>
+      </div>
+    </div>
+  </div>
+</div>

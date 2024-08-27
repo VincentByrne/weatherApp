@@ -6,14 +6,51 @@
       "_id": "ea70fad9-bada-4488-9146-17990bd63bd1"
     },
     {
-      "title": "V1 Station",
-      "userid": "1b953914-2ced-4717-90c1-31c7a96d2bc1",
-      "_id": "25a7c545-f518-40cd-89c4-9680462c36ea"
-    },
-    {
       "title": "V2 Station",
       "userid": "947917a6-4ae4-4c8f-b044-9c545546b247",
       "_id": "c624bfac-42df-4f0e-aa6c-8a966ba0f78a"
+    },
+    {
+      "title": "Dublin",
+      "latitude": 53.3498,
+      "longitude": 6.2603,
+      "userid": "1b953914-2ced-4717-90c1-31c7a96d2bc1",
+      "_id": "db56aa87-c259-4057-bc80-6bbaf2f88007"
+    },
+    {
+      "title": "Wexford",
+      "latitude": 123,
+      "longitude": 321,
+      "userid": "1b953914-2ced-4717-90c1-31c7a96d2bc1",
+      "_id": "9d42e76f-0654-43db-b261-73bb22ed5a79"
+    },
+    {
+      "title": "Belfast",
+      "latitude": 42.21,
+      "longitude": 23.321,
+      "userid": "947917a6-4ae4-4c8f-b044-9c545546b247",
+      "_id": "40d39930-2556-4baa-9b18-9376a8553278"
+    },
+    {
+      "title": "A",
+      "latitude": 0,
+      "longitude": 0,
+      "userid": "1b953914-2ced-4717-90c1-31c7a96d2bc1",
+      "_id": "84a8afb7-f93e-43f4-9b55-75c7446c63a0"
+    },
+    {
+      "title": "Z",
+      "latitude": 0,
+      "longitude": 0,
+      "userid": "1b953914-2ced-4717-90c1-31c7a96d2bc1",
+      "_id": "73adefed-b448-442a-b151-5f96bd69b77a"
+    },
+    {
+      "title": "M",
+      "latitude": 0,
+      "longitude": 0,
+      "userid": "1b953914-2ced-4717-90c1-31c7a96d2bc1",
+      "_id": "4e3c5ab7-3c7e-461f-a69d-76ff3653992c"
     }
   ]
 }

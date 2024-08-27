@@ -1,8 +1,22 @@
 {{> menu}}
 
 <section class="section">
-  <div class="title">
-    {{station.title}}
+  <div class="subTitle">
+    {{> forecast}}
+    
+    
+    //Tests
+  <h4> Shortest Report: {{shortestReport.code}}</h4>
+  <h4> Latitude: {{station.latitude}}</h4>
+  <h4> Longitude: {{station.longitude}}</h4> 
+  <h4> Recent Code: {{mostRecentCode.code}}</h4> 
+  <h4> Description: {{weatherDescription}}</h4> 
+  <h4> Weather Icon Code: {{weatherIcon}} </h4>
+  <h4> Max Temp: {{maxTemp}} </h4>
+  <h4> Min Temp: {{minTemp}} </h4>
+    
+    
+    
   </div>
   {{> list-reports}}
   {{> add-report}}
