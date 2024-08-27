@@ -14,6 +14,34 @@
       "email": "Vincentbyrne@hotmail.com",
       "password": "YoloSwag09",
       "_id": "947917a6-4ae4-4c8f-b044-9c545546b247"
+    },
+    {
+      "firstName": "Vincent",
+      "lastName": "Byrne",
+      "email": "Vincentpbyrne@hotmail.com",
+      "password": "123",
+      "_id": "1b9682e9-d68d-469d-939e-77ce66783a19"
+    },
+    {
+      "firstName": "Vincent",
+      "lastName": "Byrne",
+      "email": "Vincentpbyrne@hotmail.com",
+      "password": "123",
+      "_id": "80d2ad8e-72b4-44ea-a73e-a1652a348f53"
+    },
+    {
+      "firstName": "Vincent",
+      "lastName": "Byrne",
+      "email": "Vincentpbyrne@hotmail.com",
+      "password": "123",
+      "_id": "b91bc68c-15b2-45cc-a215-eae068706c23"
+    },
+    {
+      "firstName": "Vincent",
+      "lastName": "Byrne",
+      "email": "Vincentbyrne@hotmail.com",
+      "password": "123",
+      "_id": "21c24bef-f466-4191-8667-902665de26b3"
     }
   ]
 }
