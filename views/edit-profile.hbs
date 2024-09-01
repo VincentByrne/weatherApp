@@ -1,0 +1,36 @@
+{{> menu active="profile"}}
+
+<section class="section">
+  <h1 class="title">{{title}}</h1>
+  <form action="/profile/edit" method="POST">
+    <div class="field">
+      <label class="label">First Name</label>
+      <div class="control">
+        <input class="input" type="text" name="firstName" value="{{user.firstName}}">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Last Name</label>
+      <div class="control">
+        <input class="input" type="text" name="lastName" value="{{user.lastName}}">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input class="input" type="email" name="email" value="{{user.email}}" readonly>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Password</label>
+      <div class="control">
+        <input class="input" type="password" name="password" placeholder="Enter new password" required>
+      </div>
+    </div>
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link" type="submit">Update Profile</button>
+      </div>
+    </div>
+  </form>
+</section>

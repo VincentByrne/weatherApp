@@ -1,0 +1,40 @@
+{{> menu active="profile"}}
+
+<section class="section">
+  <h1 class="title">{{title}}</h1>
+  
+  <div class="field">
+    <label class="label">First Name</label>
+    <div class="control">
+      <input class="input" type="text" name="firstName" value="{{user.firstName}}" readonly>
+    </div>
+  </div>
+  
+  <div class="field">
+    <label class="label">Last Name</label>
+    <div class="control">
+      <input class="input" type="text" name="lastName" value="{{user.lastName}}" readonly>
+    </div>
+  </div>
+  
+  <div class="field">
+    <label class="label">Email</label>
+    <div class="control">
+      <input class="input" type="email" name="email" value="{{user.email}}" readonly>
+    </div>
+  </div>
+  
+  <div class="field">
+    <label class="label">Password</label>
+    <div class="control">
+      <input class="input" type="password" name="password" value="******" readonly>
+    </div>
+  </div>
+
+  <div class="field is-grouped">
+    <div class="control">
+      <a class="button is-link" href="/profile/edit">{{> icons/edit}} Edit Profile</a>
+    </div>
+  </div>
+  
+</section>

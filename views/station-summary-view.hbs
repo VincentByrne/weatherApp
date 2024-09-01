@@ -1,0 +1,19 @@
+{{> menu active="station-summary"}}
+
+<section class="section">
+  <h1 class="title">{{title}}</h1>
+
+  {{#each stations}}
+    <div class="box mb-4">
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <h2 class="subtitle">{{this.title}}</h2>
+        </div>
+        <div class="column is-12">
+          {{> forecast station=this}}
+        </div>
+      </div>
+    </div>
+  {{/each}}
+
+</section>
