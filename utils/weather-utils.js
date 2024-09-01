@@ -1,4 +1,4 @@
-export const weatherMapping = {
+export const weatherMapping = { //assigns weather code with discription and icon 
   "200": { icon: "11", description: "Thunderstorm with light rain" },
   "201": { icon: "11", description: "Thunderstorm with rain" },
   "202": { icon: "11", description: "Thunderstorm with heavy rain" },
@@ -54,4 +54,25 @@ export const weatherMapping = {
   "802": { icon: "03", description: "Scattered clouds" },
   "803": { icon: "04", description: "Broken clouds" },
   "804": { icon: "04", description: "Overcast clouds" },
+}
+
+export const convertDegreesToDirection = (degrees) => { // assigns degrees with wind direction.
+  if (degrees >= 348.75 || degrees < 11.25) return "North";
+  if (degrees >= 11.25 && degrees < 33.75) return "North-Northeast";
+  if (degrees >= 33.75 && degrees < 56.25) return "Northeast";
+  if (degrees >= 56.25 && degrees < 78.75) return "East-Northeast";
+  if (degrees >= 78.75 && degrees < 101.25) return "East";
+  if (degrees >= 101.25 && degrees < 123.75) return "East-Southeast";
+  if (degrees >= 123.75 && degrees < 146.25) return "Southeast";
+  if (degrees >= 146.25 && degrees < 168.75) return "South-Southeast";
+  if (degrees >= 168.75 && degrees < 191.25) return "South";
+  if (degrees >= 191.25 && degrees < 213.75) return "South-Southwest";
+  if (degrees >= 213.75 && degrees < 236.25) return "Southwest";
+  if (degrees >= 236.25 && degrees < 258.75) return "West-Southwest";
+  if (degrees >= 258.75 && degrees < 281.25) return "West";
+  if (degrees >= 281.25 && degrees < 303.75) return "West-Northwest";
+  if (degrees >= 303.75 && degrees < 326.25) return "Northwest";
+  if (degrees >= 326.25 && degrees < 348.75) return "North-Northwest";
+  return "Invalid Direction"; 
 };
+

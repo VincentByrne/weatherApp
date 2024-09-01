@@ -11,7 +11,7 @@ export const userStore = {
 
   async addUser(user) {
     await db.read();
-    user._id = v4();
+    user._id = v4(); 
     db.data.users.push(user);
     await db.write();
     return user;
@@ -27,11 +27,22 @@ export const userStore = {
     return db.data.users.find((user) => user.email === email);
   },
 
+  async updateUser(id, updatedDetails) {
+    await db.read();
+    const user = db.data.users.find((user) => user._id === id);
+    if (user) {
+      Object.assign(user, updatedDetails);
+      await db.write();
+    }
+},
+
   async deleteUserById(id) {
     await db.read();
     const index = db.data.users.findIndex((user) => user._id === id);
-    db.data.users.splice(index, 1);
-    await db.write();
+    if (index !== -1) {
+      db.data.users.splice(index, 1);
+      await db.write();
+    }
   },
 
   async deleteAll() {
